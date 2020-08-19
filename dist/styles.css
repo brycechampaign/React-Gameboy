@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+:root {
+  --shell-color: #6099c7;
+  --shell-corner-radius: 5px 5px 30px 5px;
+  --button-color: #484848;
+  --shell-button-text: #6d6d6d;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: darkslategray;
+  font-family: 'Alata', sans-serif;
+}
+
+#game-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+}
+
+#gameboy {
+  background-color: grey;
+  box-shadow: 10px 10px #253f3f;
+  border-radius: var(--shell-corner-radius);
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  height: 40em;
+}
+
+#top {
+  height: 50%;
+  background-color: var(--shell-color);
+  border-radius: 5px 5px 0 0;
+}
+
+#bezel {
+  background-color: darkslategray;
+  border-radius: var(--shell-corner-radius);
+  height: 70%;
+  margin: 1.5em;
+  padding: 1.5em;
+}
+
+#inner-screen {
+  background-color: #b8b390;
+  height: 100%;
+}
+
+#bottom {
+  height: 50%;
+  background-color: var(--shell-color);
+  border-radius: var(--shell-corner-radius);
+  display: flex;
+  flex-direction: column;
+}
+
+#controls-top {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+#dpad {
+  height: 7em;
+  width: 7em;
+  background-color: var(--button-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dpad-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dpad-square {
+  background-color: var(--shell-color);
+  height: 2.6em;
+  width: 2.6em;
+}
+
+#buttons {
+  height: 7em;
+  width: 7em;
+  padding-top: 0.8em;
+  background-color: var(--shell-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: var(--button-color);
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.button-text {
+  color: var(--shell-button-text);
+  margin-top: 13%;
+  font-size: 1.5em;
+}
+
+#controls-bottom {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#bottom-button-group {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.bottom-button {
+  background-color: var(--button-color);
+  border-radius: 10px;
+  width: 4em;
+  height: 1.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-text {
+  font-size: 70%;
+  color: var(--shell-button-text);
+  margin-top: 0.4em;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "react-gameboy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server/server.js",
+    "build-dev": "webpack -d --mode development --watch",
+    "build-prod": "webpack -p --mode production"
+  },
+  "author": "Bryce Champaign",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-three-fiber": "^4.2.20",
+    "three": "^0.119.1"
+  }
+}
